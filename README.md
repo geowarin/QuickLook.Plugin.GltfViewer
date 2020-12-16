@@ -1,24 +1,18 @@
 ![QuickLook icon](https://user-images.githubusercontent.com/1687847/29485863-8cd61b7c-84e2-11e7-97d5-eacc2ba10d28.png)
 
-# QuickLook.Plugin.HelloWorld
+# QuickLook.Plugin.GltfViewer
 
-This plugin illustrates the development process of [QuickLook](https://github.com/QL-Win/QuickLook).
+Preview GLTF
 
-## Try out
+# Gotchas
 
-1. Go to [Release page](https://github.com/QL-Win/QuickLook.Plugin.HelloWorld/releases) and download the latest version.
-2. Make sure that you have QuickLook running in the background. Go to your Download folder, and press <key>Spacebar</key> on the downloaded `.qlplugin` file.
-3. Click the “Install” button in the popup window.
-4. Restart QuickLook.
-5. Create a file, change its extension to `.zzz`.
-6. Select the file and press <key>Spacebar</key>.
+CEFSharp requires the build to specify x86/x64.
+On my machine I build for x64 but I'm not sure what to distribute
 
-## Development
+# Libraries
 
- 1. Clone this project. Do not forget to update submodules.
- 2. Build project with `Release` profile.
- 3. Run `Scripts\pack-zip.ps1`.
- 4. You should find a file named `QuickLook.Plugin.HelloWorld.qlplugin` in the project directory.
+* [CEFSharp](https://github.com/cefsharp/CefSharp)
+* [GLTFViewer](https://github.com/donmccurdy/three-gltf-viewer.git)
 
 ## License
 

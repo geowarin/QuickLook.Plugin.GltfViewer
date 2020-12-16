@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using QuickLook.Common.Plugin;
 
 namespace QuickLook.Plugin.HelloWorld
@@ -15,19 +14,17 @@ namespace QuickLook.Plugin.HelloWorld
 
         public bool CanHandle(string path)
         {
-            return !Directory.Exists(path) && path.ToLower().EndsWith(".zzz");
+            return !Directory.Exists(path) && (path.ToLower().EndsWith(".gltf") || path.ToLower().EndsWith(".glb"));
         }
 
         public void Prepare(string path, ContextObject context)
         {
-            context.PreferredSize = new Size {Width = 600, Height = 400};
+            context.PreferredSize = new Size {Width = 800, Height = 800};
         }
 
         public void View(string path, ContextObject context)
         {
-            var viewer = new Label {Content = "I am a Label. I do nothing at all."};
-
-            context.ViewerContent = viewer;
+            context.ViewerContent = new WebFrame(path);
             context.Title = $"{Path.GetFileName(path)}";
 
             context.IsBusy = false;

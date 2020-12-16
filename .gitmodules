@@ -1,3 +1,6 @@
 [submodule "QuickLook.Common"]
 	path = QuickLook.Common
 	url = https://github.com/QL-Win/QuickLook.Common.git
+[submodule "three-gltf-viewer"]
+	path = three-gltf-viewer
+	url = https://github.com/donmccurdy/three-gltf-viewer.git
