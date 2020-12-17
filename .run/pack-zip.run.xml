@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="pack-zip" type="PowerShellRunType" factoryName="PowerShell" scriptUrl="C:\Users\perso\dev\csharp\QuickLook.Plugin.HelloWorld\Scripts\pack-zip.ps1" workingDirectory="C:\Users\perso\dev\csharp\QuickLook.Plugin.HelloWorld\Scripts">
+    <method v="2">
+      <option name="Build" default="false" projectName="QuickLook.Plugin.HelloWorld" projectPath="C:\Users\perso\dev\csharp\QuickLook.Plugin.HelloWorld\QuickLook.Plugin.HelloWorld.csproj" />
+    </method>
+  </configuration>
+</component>
